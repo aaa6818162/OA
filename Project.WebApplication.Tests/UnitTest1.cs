@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Web.Hosting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Project.Map.PermissionManager;
 using Project.Model.PermissionManager;
@@ -27,6 +28,7 @@ namespace Project.WebApplication.Tests
         [TestMethod]
         public void Add()
         {
+            ISAPIRuntime
             UserInfoEntity t=new UserInfoEntity();
             t.UserCode = "1111";
             t.UserName = "2222";
